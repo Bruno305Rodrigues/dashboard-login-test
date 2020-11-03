@@ -22,7 +22,7 @@ function entrar(event) {
         alert("Senha incorreta");
         return;
     }
-
+    localStorage.setItem("usuario", JSON.stringify(usuario));
     localStorage.setItem("thumbnail" , usuario.picture.thumbnail);
     localStorage.setItem("name" ,usuario.name);
 
