@@ -8,6 +8,7 @@ window.addEventListener('load', function () {
     document.getElementById("barra").style.width = `${((totalHomens() / totalLIsta()) * 100)}%`;
     fotoAvatar();
     nomeAvatar();
+    useremail();
 
 
 
@@ -97,21 +98,28 @@ function totalLIsta() {
 
 
 function fotoAvatar(foto) {
-   
+
     var novoAvatar = localStorage.getItem("thumbnail");
 
     var avatar = document.getElementById("avatar");
 
     avatar.src = novoAvatar;
-    
+
 
 }
 
 
 function nomeAvatar() {
-     var nome = document.getElementById("nome");
+    var nome = document.getElementById("nome");
     var novoNome = localStorage.getItem("name")
     nome.innerText = novoNome;
+
+}
+
+function useremail() {
+    var email = document.getElementById("useremail");
+    var novoemail = localStorage.getItem("email");
+    email.innerText = novoemail;
 
 }
 

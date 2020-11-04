@@ -22,9 +22,10 @@ function entrar(event) {
         alert("Senha incorreta");
         return;
     }
-    localStorage.setItem("usuario", JSON.stringify(usuario));
+    //localStorage.setItem("usuario", JSON.stringify(usuario));
     localStorage.setItem("thumbnail" , usuario.picture.thumbnail);
     localStorage.setItem("name" ,usuario.name);
+    localStorage.setItem("email", usuario.email);
 
 
     window.location.href = "dashboard.html";
